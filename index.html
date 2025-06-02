@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Authentication</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    .hidden { display: none; }
+    .container { max-width: 300px; margin: auto; }
+    input { display: block; margin-bottom: 10px; width: 100%; padding: 8px; }
+    button { padding: 10px; width: 100%; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Register</h2>
+  <input type="text" id="regUsername" placeholder="Username">
+  <input type="password" id="regPassword" placeholder="Password">
+  <button onclick="register()">Register</button>
+</div>
+
+<div class="container">
+  <h2>Login</h2>
+  <input type="text" id="loginUsername" placeholder="Username">
+  <input type="password" id="loginPassword" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div class="container hidden" id="securePage">
+  <h2>Welcome to the Secure Page!</h2>
+  <p>You are logged in.</p>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
